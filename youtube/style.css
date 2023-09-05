@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10px; */
+    position: sticky;
+    padding: 15px 10px 10px;
+    top: 0px;
+    /* box-shadow: 0px 0px 3px rgb(196, 196, 196) ; */
+    z-index: 10;
+    background: white;
+}
+.navbar .logo{
+    margin-left: 20px;
+}
+.navbar .logo .sidelines{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.navbar .logo .youtubeicon{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar .logo .in{
+    vertical-align: top;
+    font-size: 10px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.navbar .search-box{
+    width: 650px;
+    position: relative;
+}
+.navbar .search-box input{
+    height: 42px;
+    /* width: 100%; */
+    width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    outline: 0;
+    font-size: 16px;
+    border: 1px solid rgb(196, 196, 196);
+
+}
+.navbar .search-box input::placeholder{
+    font-size: 16px;
+}
+.navbar .search-box .searchIcon{
+    position: absolute;
+    right: 150px;
+    top: 2px;
+    height: 40px;
+    width: 60px;
+    border-radius: 0px 30px 30px 0px;
+    outline: none;
+    border: 0.5px lightgrey;
+    cursor: pointer;
+}
+.navbar .search-box .searchIcon i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar .search-box .micIcon{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.navbar .search-box .micIcon i{
+    font-size: 18px;
+}
+.navbar .rightContent{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.navbar .rightContent .fa-ellipsis-vertical{
+    margin-right: 15px;
+    font-size: 18px;
+}
+.navbar .rightContent button{
+    height:32px;
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar .rightContent .fa-user{
+        margin-right: 8px;
+        font-size: 14px;
+        color: rgb(25, 66, 231);
+}
+.navbar .rightContent button span{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(25, 66, 231);
+
+}
+.side-bar{
+   width: 18%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /* border: 1px solid black; */
+   position:static;
+   padding-top: 20px;
+   top: 0;
+   left: 0;
+   float: left;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+.side-bar::-webkit-scrollbar{
+    width: 6px;
+
+}
+.side-bar::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px transparent;
+    margin-top: 20px;
+}
+
+.side-bar:hover::-webkit-scrollbar{
+    width: 6px;
+}
+.side-bar:hover::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px transparent;
+    margin-top: 20px;
+}
+.side-bar:hover::-webkit-scrollbar-thumb{
+    background: darkgray;
+    border-radius: 8px;
+}
+
+.side-bar a{
+    display: flex;
+    width: fit-content;
+    margin: 0px 20px 5px;
+    padding: 10px 15px 10px;
+    width: 85%;
+    border-radius: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.side-bar a i{
+    font-size: 18px;
+    margin-right: 15px;
+}
+.side-bar a span{
+    font-size: 17px;
+}
+.side-bar a:hover{
+    background: #efefef;
+}
+.active{ 
+    background: #E5E5E5;
+    font-weight: 600;
+}
+.side-bar hr{
+    width: 88%;
+    margin: 0px auto;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+.side-bar h2{
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.side-bar .subscribe img{
+    width: 25px;
+    margin-right: 16px;
+}
+.vid-content{
+    width: 82%;
+    display: inline-block;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
