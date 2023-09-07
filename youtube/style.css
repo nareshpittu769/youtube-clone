@@ -275,3 +275,41 @@ aside.small-container a{
 .video-components .video-div .vid-info .vid-title-info p.chennel{
     margin: 3px 0px;
 }
+
+/* playvideo-styles */
+
+body{
+    overflow: hidden;
+}
+.nav-playvideo{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+.video-container .video-div{
+    width: 70%;
+    height: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+    float: left;
+    display: flex;
+}
+.video-container .listcontainer{
+    width: 28%;
+    float: left;
+    margin-left: 2%;
+    
+}
+
+
+.video-container{
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+.video-container .listcontainer a img{
+    height: 130px;
+    width: 160px;
+}
