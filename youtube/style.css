@@ -7,10 +7,6 @@ a{
     text-decoration: none;
     color: black;
 }
-body::-webkit-scrollbar{
-    width: 0;
-    padding: 20px;
-}
 nav.navbar{
     display: flex;
     width: 100%;
@@ -118,7 +114,7 @@ nav.navbar{
 .side-bar{
    width: 18%;
    height: 100%;
-   max-height:100%;
+   min-height:100%;
    display: flex;
    flex-direction: column;
    position:absolute;
@@ -130,10 +126,17 @@ nav.navbar{
    overflow-y: scroll;
    overflow-x: hidden;
 }
+aside.small-container a{
+    width: 80px;
+}
+
 .small-container{
     width: 8%;
+    /* border: 1px solid yellow; */
     overflow-y: scroll;
+
 }
+
 .small-container a span,.small-container h2{
     display: none;
 }
@@ -218,33 +221,50 @@ nav.navbar{
     position: absolute;
     top: 0;
     padding-top: 80px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(260px, 280px));
+    grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
     column-gap: 10px;
     row-gap: 20px;
+    scroll-behavior: smooth;
 }
-.video-components:hover::-webkit-scrollbar{
+.big-container{
+    width:91%;
+    height: 100%;
+    overflow-x: hidden;
+    margin-left: 9%;
+}
+.video-components::-webkit-scrollbar{
+    width: 0;
+}
+/* .video-components:hover::-webkit-scrollbar{
     width: 6px;
+    scroll-behavior: smooth;
+
 }
 .video-components:hover::-webkit-scrollbar-track{
     box-shadow: inset 0 0 5px transparent;
-
+    border-radius: 8px;
 }
 .video-components:hover::-webkit-scrollbar-thumb{
     background: darkgray;
     border-radius: 8px;
-}
+} */
 .video-components .video-div div:first-child img{
     width: 100%;
+    height: 195px;
     border-radius: 10px;
+    cursor: pointer;
     /* border-radius: 10px; */
 }
 .video-components .video-div .vid-info{
     margin-top: 10px;
     display: flex;
     width: 300px;
+    cursor: pointer;
 }
 .video-components .video-div .vid-info img{
     height: 30px;
