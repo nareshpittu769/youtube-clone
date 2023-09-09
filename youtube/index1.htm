@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playvideo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="./assets/fevicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a34bc60080.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar nav-playvideo">
+<body class="playvideobody">
+    <nav class="navbar">
         <div class="logo">
-            <a href="#"><img src="./assets/106869800-vecteur-d-icône-de-menu-isolé-sur-fond-blanc-pour-la-conception-de-votre-application-web-et-mobile.jpg" class="sidelines"></a>
+            <a href="#"><img src="./assets/106869800-vecteur-d-icône-de-menu-isolé-sur-fond-blanc-pour-la-conception-de-votre-application-web-et-mobile.jpg" class="hamburger sidelines"></a>
             <a href="index.html"><img src="./assets/youtubelogo.png" class="youtubeicon"><sup class="in">IN</sup></a>
         </div>
-        <div class="search-box">
-            <input type="text" name="search" id="search" placeholder="search">
-            <button class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="inputbox">
+            <div class="search-box">
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search"><span class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
             <button class="micIcon"><i class="fa-solid fa-microphone"></i></button>
         </div>
         <div class="rightContent">
@@ -25,16 +29,73 @@
             <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
             <button type="button"><i class="fa-solid fa-user"></i><span>Sign in</span></button>
         </div>
-        
     </nav>
+    <!-- <aside class="side-bar playvideoaside">
+        <a href="./index.html" class="active"><i class="fa-solid fa-house" ></i><span>Home</span></a>
+        <a href="#"><i class="fa-regular fa-circle-play"></i><span>Shorts</span></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i><span>Subscribe</span></a>
+        <hr>
+        <a href="#"><i class="fa-solid fa-bookmark"></i><span>Library</span></a>
+        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a>
+        <a href="#"><i class="fa-regular fa-circle-play"></i> <span>Your videos</span></a>
+        <a href="#"><i class="fa-solid fa-clock"></i><span>Watch later</span></a>
+        <a href="#"><i class="fa-solid fa-thumbs-up"></i><span>Liked videos</span></a>
+        <a href="#"><i class="fa-solid fa-chevron-down"></i><span>Show more</span></a>
+        <hr>
+        <h2>Subscriptions</h2>
+        <a href="" class="subscribe"><img src="./assets/1200px-Python.svg.png"><span>Learn Python</span></a>
+        <a href="" class="subscribe"><img src="./assets/free-html-5728485-4781249.webp"><span>Learn HTML</span></a>
+        <a href="" class="subscribe"><img src="./assets/css.svg"><span>Learn CSS</span></a>
+        <a href="" class="subscribe"><img src="./assets/javascript.webp"><span>Learn JavaScript</span></a>
+        <a href="" class="subscribe"><img src="./assets/java.jpg"><span>Learn Java</span></a>
+
+    </aside> -->
     <div class="video-container">
-        <div class="video-div">
-            <video src="" class="video"></video>
+        <div class="show-video">
+            <video controls autoplay loop>
+                <source src="./assets/sand.mp4" type="video/mp4">
+            </video>
+            <div class="tags">
+                <a href="#">#sandwind</a><a href="#">#youtube</a><a href="#">#follow</a>
+            </div>
+            <div class="title">
+                <h2>A sand view of dessert || it is so hot || making tea in this sand</h2>
+            </div>
+            <div class="profile">
+                <div class="chennel-title">
+                    <a href="#"><img src="./assets/sand.jpeg"></a>
+                    <div class="chennal-name">
+                        <h3>Travel chennel</h3>
+                        <p class="subscribers">
+                            29.9M subscribers
+                        </p>
+                    </div>
+                    <button type="button"><i class="fa-solid fa-bell"></i> <span>Subscribed</span><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="likes">
+                    <div class="likesbox">
+                        <span class="like" title="like it"><i class="fa-solid fa-thumbs-up"></i>99k</span>
+                        <span class="dislike"><i class="fa-solid fa-thumbs-down"></i></span>
+                    </div>
+                    <span class="share">
+                        <i class="fa-solid fa-share"></i><span>share</span>
+                    </span>
+                </div>
+            </div>
+            <div class="discription">
+                <p class="para">
+                    2028292 views 09 sep 2023 <a href="#">#sand</a><a href="#">#youtube</a>
+                </p>
+                <p class="discrip block">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat ratione dolorum provident, rerum possimus porro magni nam necessitatibus optio soluta quibusdam molestias repellat ullam, delectus odit unde ipsa excepturi totam! Harum, incidunt voluptate corporis nulla autem fugit enim? Eos est nulla ullam eveniet sapiente dicta minus. Amet vitae praesentium facere tempore laboriosam perferendis facilis! Numquam ab recusandae obcaecati eos, cumque aliquid reprehenderit! Itaque, doloremque nostrum! Consectetur nesciunt iste dolorum eos accusantium voluptatibus distinctio incidunt? Iusto assumenda nam consequuntur doloribus sed eaque officiis ab fugiat neque expedita voluptas blanditiis, mollitia amet nostrum doloremque unde sapiente id! Corrupti nulla ipsam odit recusandae modi tenetur aliquid dolor soluta non doloribus mollitia laborum quam unde eos, ducimus beatae vitae delectus quas quia at. Magni vero nemo ab, est a accusamus eius incidunt, nihil cum qui vel, quos molestias. Illo quasi iure porro aspernatur! Distinctio sint incidunt cum, eius explicabo nulla. Impedit eos facilis, animi debitis hic ipsam maiores! Quasi delectus error laborum, praesentium unde, nulla quas beatae esse minus hic, ullam cum incidunt eveniet rem nostrum odio sunt laudantium ad. Ex quasi exercitationem incidunt accusamus molestiae qui, numquam tenetur, accusantium alias aperiam facilis omnis eaque! Vero reiciendis officia mollitia aut veniam. Ea consequatur excepturi reiciendis tempora officia error quibusdam quam laudantium libero magnam. Dignissimos consequatur aspernatur repudiandae ad voluptatum dolor eius, quasi dolorem a culpa nemo possimus similique deserunt sit error. Nisi pariatur quae autem corrupti nobis laudantium cumque accusantium et, dolorem reprehenderit est voluptas ad nihil sunt enim necessitatibus ex blanditiis amet repudiandae ratione! In eius excepturi temporibus dolore, saepe commodi corporis enim deleniti esse sit hic voluptates sequi. Eaque aliquam reprehenderit omnis, odit tenetur rem, possimus quod doloribus ea fugit recusandae unde nobis perspiciatis ipsa officia, velit animi laboriosam alias corrupti! Expedita dignissimos aliquid incidunt, sunt magnam pariatur consequuntur porro a, corrupti inventore tempora praesentium enim perferendis minima velit? Commodi amet adipisci autem repellendus iste quod cum officia eius sed id, esse sit blanditiis doloribus ab architecto 
+                </p>
+                <span class="showmore">showmore</span>
+            </div>
         </div>
         <div class="listcontainer">
             <div class="video-div">
                 <div>
-                    <a href="./index1.htm"><img src="./assets/natureimg1.jpg"></a>
+                    <a href="./index1.htm" ><img src="./assets/natureimg1.jpg"></a>
                 </div>
                 <div class="vid-info">
                     <div class="vid-title-info">
@@ -46,7 +107,43 @@
             </div>
             <div class="video-div">
                 <div>
-                    <a href="./index1.htm"><img src="./assets/natureimg.avif"></a>
+                    <a href="./index1.htm"><img src="./assets/beach.jpg"></a>
+                </div>
+                <div class="vid-info">
+                    <div class="vid-title-info">
+                        <h3>Beach times</h3>
+                        <p class="chennel">Explore nature</p>
+                        <p class="views">10m views &bull;10 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-div">
+                <div>
+                    <a href="./index1.htm"><img src="./assets/lamb.webp"></a>
+                </div>
+                <div class="vid-info">
+                    <div class="vid-title-info">
+                        <h3>Lambs view</h3>
+                        <p class="chennel">Explore nature</p>
+                        <p class="views">10m views &bull;10 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-div">
+                <div>
+                    <a href="./index1.htm"><img src="./assets/butterfly.jpg"></a>
+                </div>
+                <div class="vid-info">
+                    <div class="vid-title-info">
+                        <h3>Butterfly times</h3>
+                        <p class="chennel">Explore nature</p>
+                        <p class="views">10m views &bull;10 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-div">
+                <div>
+                    <a href="./index1.htm"><img src="./assets/ringroad.jpg"></a>
                 </div>
                 <div class="vid-info">
                     <div class="vid-title-info">
@@ -56,7 +153,34 @@
                     </div>
                 </div>
             </div>
+            <div class="video-div">
+                <div>
+                    <a href="./index1.htm"><img src="./assets/snowimg.jpg"></a>
+                </div>
+                <div class="vid-info">
+                    <div class="vid-title-info">
+                        <h3>Evening times</h3>
+                        <p class="chennel">Explore nature</p>
+                        <p class="views">10m views &bull;10 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-div">
+                <div>
+                    <a href="./index1.htm"><img src="./assets/woodhouse.jpg"></a>
+                </div>
+                <div class="vid-info">
+                    <div class="vid-title-info">
+                        <h3>Evening times</h3>
+                        <p class="chennel">Explore nature</p>
+                        <p class="views">10m views &bull;10 days ago</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    <script src="./script.js"></script>
+    <script src="./scriptply.js"></script>
 </body>
 </html>

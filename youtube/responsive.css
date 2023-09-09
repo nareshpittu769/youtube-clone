@@ -1,0 +1,124 @@
+
+nav.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding:10px 10px 10px;  
+    z-index: 10;
+    background: white;
+}
+.navbar .logo{
+    margin-left: 20px;
+}
+.navbar .logo .sidelines{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.navbar .logo .youtubeicon{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar .logo .in{
+    vertical-align: top;
+    font-size: 10px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.navbar .inputbox{
+    width: 38%;
+    display: flex;
+}
+.navbar .inputbox .search-box{
+    width: 100%;
+    position: relative;
+    border: 1px solid rgb(196, 196, 196);
+    height: 42px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 20px;
+    justify-content: space-between;
+
+}
+.navbar .inputbox .search-box .search{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar .inputbox .search-box #search{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.navbar .inputbox .search-box input::placeholder{
+    font-size: 16px;
+    background: transparent;
+}
+.navbar .inputbox .search-box .searchicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 50% 50% 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background:rgb(237, 237, 237) ;
+}
+.navbar .inputbox .search-box .searchicon:hover{
+    background:rgb(205, 205, 205) ;
+
+
+}
+.navbar .micIcon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+}
+.navbar .micIcon:hover{
+    background:rgb(205, 205, 205) ;
+
+}
+.navbar .micIcon i{
+    font-size: 18px;
+}
+.navbar .rightContent{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.navbar .rightContent .fa-ellipsis-vertical{
+    margin-right: 15px;
+    font-size: 18px;
+}
+.navbar .rightContent button{
+    height:32px;
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar .rightContent button:hover{
+    background:rgb(205, 205, 205) ;
+
+}
+.navbar .rightContent .fa-user{
+        margin-right: 8px;
+        font-size: 14px;
+        color: rgb(25, 66, 231);
+}
+.navbar .rightContent button span{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(25, 66, 231);
+
+}

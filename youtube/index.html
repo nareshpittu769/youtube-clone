@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube(Practice)</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="./assets/fevicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a34bc60080.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="#"><img src="./assets/106869800-vecteur-d-icône-de-menu-isolé-sur-fond-blanc-pour-la-conception-de-votre-application-web-et-mobile.jpg" class="sidelines"></a>
+            <a href="#"><img src="./assets/106869800-vecteur-d-icône-de-menu-isolé-sur-fond-blanc-pour-la-conception-de-votre-application-web-et-mobile.jpg" class="hamburger sidelines"></a>
             <a href="index.html"><img src="./assets/youtubelogo.png" class="youtubeicon"><sup class="in">IN</sup></a>
         </div>
-        <div class="search-box">
-            <input type="text" name="search" id="search" placeholder="search">
-            <button class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="inputbox">
+            <div class="search-box">
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search"><span class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
             <button class="micIcon"><i class="fa-solid fa-microphone"></i></button>
         </div>
         <div class="rightContent">
@@ -25,9 +29,12 @@
             <span class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></span>
             <button type="button"><i class="fa-solid fa-user"></i><span>Sign in</span></button>
         </div>
-        
     </nav>
     <aside class="side-bar">
+        <!-- <div class="logo">
+            <a href="#"><img src="./assets/106869800-vecteur-d-icône-de-menu-isolé-sur-fond-blanc-pour-la-conception-de-votre-application-web-et-mobile.jpg" class="hamburger sidelines"></a>
+            <a href="index.html"><img src="./assets/youtubelogo.png" class="youtubeicon"></a>
+        </div> -->
         <a href="./index.html" class="active"><i class="fa-solid fa-house" ></i><span>Home</span></a>
         <a href="#"><i class="fa-regular fa-circle-play"></i><span>Shorts</span></a>
         <a href="#"><i class="fa-brands fa-youtube"></i><span>Subscribe</span></a>
@@ -48,7 +55,7 @@
 
     </aside>
     <div class="video-components">
-        <div class="video-div">
+        <div class="video-div natureimg1">
             <div>
                 <a href="./index1.htm"><img src="./assets/natureimg1.jpg"></a>
             </div>
@@ -61,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div natureimg">
             <div>
                 <a href="./index1.htm"><img src="./assets/natureimg.avif"></a>
             </div>
@@ -74,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div beach">
             <div>
                 <a href="./index1.htm"><img src="./assets/beach.jpg"></a>
             </div>
@@ -87,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div butterfly-2">
             <div>
                 <a href="./index1.htm"><img src="./assets/butterfly-2.jpg"></a>
             </div>
@@ -100,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div butterfly">
             <div>
                 <a href=""><img src="./assets/butterfly.jpg"></a>
             </div>
@@ -113,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div cock">
             <div>
                 <a href="./index1.htm"><img src="./assets/cock.jpg"></a>
             </div>
@@ -126,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div housesmountain">
             <div>
                 <a href="./index1.htm"><img src="./assets/housesmountain.jpg"></a>
             </div>
@@ -139,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div lamb">
             <div>
                 <a href="./index1.htm"><img src="./assets/lamb.webp"></a>
             </div>
@@ -152,9 +159,9 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div mountainsnow">
             <div>
-                <a href="./index1.htm"><img src="./assets/mountainsnow.jpg"></a>
+                <a href="./index1.htm" onclick=""><img src="./assets/mountainsnow.jpg"></a>
             </div>
             <div class="vid-info">
                 <img src="./assets/mountainsnow.jpg">
@@ -165,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div ringroad">
             <div>
                 <a href="./index1.htm"><img src="./assets/ringroad.jpg"></a>
             </div>
@@ -178,7 +185,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div sand">
             <div>
                 <a href="./index1.htm"><img src="./assets/sand.jpeg"></a>
             </div>
@@ -191,7 +198,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div snow">
             <div>
                 <a href="./index1.htm"><img src="./assets/snow.avif"></a>
             </div>
@@ -204,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div snowimg">
             <div>
                 <a href="./index1.htm"><img src="./assets/snowimg.jpg"></a>
             </div>
@@ -217,7 +224,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-div">
+        <div class="video-div woodhouse">
             <div>
                 <a href="./index1.htm"><img src="./assets/woodhouse.jpg"></a>
             </div>
@@ -232,5 +239,6 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./scriptply.js"></script>
 </body>
 </html>
