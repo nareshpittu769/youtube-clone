@@ -307,9 +307,10 @@ aside.small-container a{
     display:flex ;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    width: 100%;
 }
 .video-container .listcontainer div:first-child{
-    flex-basis: 47%;
+    flex-basis: 60%;
 }
 .video-container .listcontainer div img{
     width: 100%;
